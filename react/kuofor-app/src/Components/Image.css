@@ -1,0 +1,40 @@
+/* .img{
+    width: 100%;
+    height:300px;
+    border: 2px solid green;
+    object-fit: contain;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.contented{
+    display: grid;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     
+     padding: 4rem 1rem 0 1rem;
+    
+    
+}
+.image{
+    width: 600px;
+    min-height: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    justify-content: space-around;
+    
+}
+@media screen and (max-width:940px) {
+    .contented{
+        display: none;
+    }
+  
+
+   
+
+    } */
+    

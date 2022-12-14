@@ -1,0 +1,115 @@
+.box{
+    position: relative;
+    width: 320px;
+    margin:100px auto 0 auto;
+    perspective: 1000px;
+    margin-top: 350px;
+    margin-bottom: 20rem;
+}
+.carousel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style:preserve-3d ;
+    animation: rotate360 40s infinite forwards linear;
+
+}
+.image{
+    position: absolute;
+    width: 280px;
+    height: 187px;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    background-size: cover;
+    border-radius: 30%;
+    border: 1.5px solid  rgb(33, 105, 45);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+ span{
+     margin: auto;
+     font-size: 2rem;
+}
+@keyframes rotate360{
+      from{
+          transform: rotateY(0deg);
+      }
+      to{
+         transform: rotateY(-360deg);
+      }
+}
+.image:nth-child(1){
+    background: url("./images/ımage1.jpg");
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.image:nth-child(2){
+    background: url("./images/ımage2.jpg");
+    transform: rotateY(60deg) translateZ(430px);
+
+}
+.image:nth-child(3){
+    background: url("./images/ımage3.jpg");
+    transform: rotateY(120deg) translateZ(430px);
+
+}
+.image:nth-child(4){
+    background: url("./images/ımage4.jpg");
+    transform: rotateY(180deg) translateZ(430px);
+
+}
+.image:nth-child(5){
+    background: url("./images/ımage5.jpg");
+    transform: rotateY(240deg) translateZ(430px);
+
+}
+.image:nth-child(6){
+    background: url("./images/ımage6.jpg");
+    transform: rotateY(300deg) translateZ(430px);
+
+}
+
+@media screen and (max-width:940px) {
+    .image{
+        width: 100px;
+        height: 10rem;
+left: 40%;
+    }
+    .box{
+        position: relative;
+        width: 320px;
+        perspective: 1000px;
+        margin-top: 250px;
+        
+    }
+    .image:nth-child(1){
+        background: url("./images/ımage1.jpg");
+        transform: rotateY(0deg) translateZ(200px);
+    }
+    
+    .image:nth-child(2){
+        background: url("./images/ımage2.jpg");
+        transform: rotateY(60deg) translateZ(200px);
+    
+    }
+    .image:nth-child(3){
+        background: url("./images/ımage3.jpg");
+        transform: rotateY(120deg) translateZ(200px);
+    
+    }
+    .image:nth-child(4){
+        background: url("./images/ımage4.jpg");
+        transform: rotateY(180deg) translateZ(200px);
+    
+    }
+    .image:nth-child(5){
+        background: url("./images/ımage5.jpg");
+        transform: rotateY(240deg) translateZ(200px);
+    
+    }
+    .image:nth-child(6){
+        background: url("./images/ımage6.jpg");
+        transform: rotateY(300deg) translateZ(200px);
+    
+    }
+}
